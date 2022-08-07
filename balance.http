@@ -1,0 +1,21 @@
+### Send GET request with json body
+GET http://localhost:8080/1/show
+Content-Type: application/json
+
+{
+}
+
+
+### Send POST request with json body
+POST http://localhost:8080/1/add/20
+Content-Type: application/json
+
+{
+}
+
+### Send POST request with json body
+POST http://localhost:8080/1/writeOff/20
+Content-Type: application/json
+
+{
+}
