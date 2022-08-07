@@ -32,7 +32,7 @@ class ShowBalanceActionTest extends TestCase
 
         $container->set(BalanceRepository::class, $balanceRepositoryProphecy->reveal());
 
-        $request = $this->createRequest('GET', '/user1/show');
+        $request = $this->createRequest('GET', '/1/show');
 
         $response = $app->handle($request);
 
@@ -67,11 +67,11 @@ class ShowBalanceActionTest extends TestCase
 
         $container->set(BalanceRepository::class, $balanceRepositoryProphecy->reveal());
 
-        $request = $this->createRequest('GET', '/user1/show/1');
+        $request = $this->createRequest('GET', '/1/show');
         $response = $app->handle($request);
 
         $payload = (string) $response->getBody();
-        $expectedError = new ActionError(ActionError::RESOURCE_NOT_FOUND, 'The Balance you requested does not exist.');
+        $expectedError = new ActionError(ActionError::RESOURCE_NOT_FOUND, 'The balance you requested does not exist.');
         $expectedPayload = new ActionPayload(404, null, $expectedError);
         $serializedPayload = json_encode($expectedPayload, JSON_PRETTY_PRINT);
 
