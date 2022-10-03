@@ -1,57 +1,26 @@
-# Avito-test-slim
+# Hexlet Test Assignment (Avito Tech)
 
-[Github README.md](https://github.com/avito-tech/job-backend-trainee-assignment)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c9400612a9ad6da2d8e1/maintainability)](https://codeclimate.com/github/funkylen/hexlet-test-assignment-avito/maintainability)
 
-## Api-routes
-### Operation with balance
-```
-/{user1}/{operation}/{count}
-```
-user1 - userId
+Выполнение тестового задания Avito. 
 
-operation - **add** or **writeOf**
+Ссылка на тестовое задание: https://github.com/avito-tech/job-backend-trainee-assignment
 
-count - count
+Выполнено в рамках активности группового обучения PHP - https://hexlet.io
 
-example request
-```injectablephp
-POST http://localhost:8080/1/add/20
-Content-Type: application/json
-```
+## Requirements
 
-### show balance
-```
-/{user1}/show
-```
-user1 - userId
+* PHP 8.1
+* Composer 2
+* PostgreSQL 14.4
+* docker-compose (local)
 
-example request
-```injectablephp
-GET http://localhost:8080/1/show
-Content-Type: application/json
+## Installation
+
+```shell
+make setup # Local env
 ```
 
+## TODO
 
-## Install the Application
-
-To run the application in development, you can run these commands 
-
-```bash
-composer start
-```
-
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-```bash
-docker-compose up -d
-```
-After that, open `http://localhost:8080` in your browser.
-
-Run this command in the application directory to run the test suite
-
-```bash
-composer test
-```
-
-That's it! Now go build something cool.
-
-
+- [ ] Аутентификация сервисов (безопасность и отметка в транзакциях)
