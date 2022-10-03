@@ -12,15 +12,4 @@
 
 * PHP 8.1
 * Composer 2
-* PostgreSQL 14.4
-* docker-compose (local)
-
-## Installation
-
-```shell
-make setup # Local env
-```
-
-## TODO
-
-- [ ] Аутентификация сервисов (безопасность и отметка в транзакциях)
+* Slim
