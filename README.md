@@ -6,7 +6,6 @@
 
 Ссылка на тестовое задание: https://github.com/avito-tech/job-backend-trainee-assignment
 
-Выполнено в рамках активности группового обучения PHP - https://hexlet.io
 
 ## Requirements
 
